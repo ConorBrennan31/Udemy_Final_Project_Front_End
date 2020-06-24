@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Account = () => {
+const Account = ({ name, emailAddress }) => {
 	return (
 		<div>
-			HELLO
+			<p>Name</p>
+			<p>{name}</p>
+		</div>
+		<div>
+			<p>Email Address</p>
+			<p>{emailAddress}</p>
 		</div>
 
 	);
