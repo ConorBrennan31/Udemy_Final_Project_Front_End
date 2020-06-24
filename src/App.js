@@ -139,8 +139,8 @@ class App extends Component {
               ? <Signin onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
               : ( this.state.route === 'account'
                 ? <div>
-                    <Account name={this.state.user.name} emailAddress={this.state.user.email} />
                     <Logo onRouteChange={this.onRouteChange} />
+                    <Account name={this.state.user.name} emailAddress={this.state.user.email} />
                   </div>
                 : <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
                 )
