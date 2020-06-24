@@ -8,7 +8,7 @@ import Particles from 'react-particles-js';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
-import Account from './components/account/account';
+import Account from './components/Account/Account';
 
 const particlesOptions = {
   particles: {
