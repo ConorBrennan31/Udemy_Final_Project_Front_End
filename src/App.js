@@ -8,6 +8,7 @@ import Particles from 'react-particles-js';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
+import Account from './components/account/account';
 
 const particlesOptions = {
   particles: {
@@ -136,7 +137,10 @@ class App extends Component {
               </div>
             : ( this.state.route === 'signin'
               ? <Signin onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
-              : <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
+              : ( this.state.route === 'account'
+                ? <Account />
+                : <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
+                )
             )
             
           }
