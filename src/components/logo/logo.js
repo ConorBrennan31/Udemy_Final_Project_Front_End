@@ -8,7 +8,7 @@ const Logo = ({ onRouteChange }) => {
 		<div className='ma4 mt0'>
 			<Tilt className="Tilt shadow-1" options={{ max : 45 }} style={{ height: 150, width: 150 }} >
  				<div className="Tilt-inner pa4"> 
- 					<img src={logo} alt="logo" onclick={() => onRouteChange('home')}/> 
+ 					<img src={logo} alt="logo" onClick={() => onRouteChange('home')}/> 
  				</div>
 			</Tilt>
 		</div>
